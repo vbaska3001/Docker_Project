@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Profile</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: 'Times New Roman', serif;
+      font-size: 16px;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 30%;
+      height: auto;
+      border-radius: 20px;
+    }
+    .field {
+      margin: 20px auto;
+      width: 50%;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 20px;
+      font-family: 'Times New Roman', serif;
+      font-weight: bold;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+    hr {
+      margin: 20px 0;
+      border: none;
+      border-top: 2px solid #ccc;
+      width: 50%;
+    }
+    #editBtn {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 20px;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: Calibri, sans-serif;
+      border-radius: 8px;
+      border: 2px solid #000;
+      background-color: #f0f0f0;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>User Profile</h1>
+  <img src="https://placedog.net/400" alt="Cute Dog">
+
+  <div class="field">
+    <label for="user">User:</label>
+    <input type="text" id="user" readonly>
+    <hr>
+  </div>
+
+  <div class="field">
+    <label for="email">Email:</label>
+    <input type="text" id="email" readonly>
+    <hr>
+  </div>
+
+  <div class="field">
+    <label for="interests">Interests:</label>
+    <textarea id="interests" rows="4" readonly></textarea>
+    <hr>
+  </div>
+
+  <button id="editBtn" onclick="toggleEdit()">Edit Profile</button>
+
+  <script>
+  let isEditing = false;
+
+  function toggleEdit() {
+    const userField = document.getElementById('user');
+    const emailField = document.getElementById('email');
+    const interestsField = document.getElementById('interests');
+    const button = document.getElementById('editBtn');
+
+    if (!isEditing) {
+      // Enable editing
+      userField.removeAttribute('readonly');
+      emailField.removeAttribute('readonly');
+      interestsField.removeAttribute('readonly');
+      button.textContent = 'Save Changes';
+      isEditing = true;
+    } else {
+      // Save the data
+      const data = {
+        user: userField.value,
+        email: emailField.value,
+        interests: interestsField.value
+      };
+
+      fetch('/save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(response => {
+        if (!response.ok) throw new Error('Failed to save');
+        return response.json();
+      })
+      .then(json => {
+        alert(json.message || 'Profile saved!');
+
+        // Lock the fields again
+        userField.setAttribute('readonly', true);
+        emailField.setAttribute('readonly', true);
+        interestsField.setAttribute('readonly', true);
+        button.textContent = 'Edit Profile';
+        isEditing = false;
+      })
+      .catch(err => {
+        alert('Error saving profile: ' + err.message);
+      });
+    }
+  }
+</script>
+
+</body>
+</html>
