@@ -5,9 +5,13 @@ This is my basic DevOps learning project where I containerized a full-stack web 
 **📦 Project Overview**
 
 **Frontend:** HTML form to collect user data
+
 **Backend:** Node.js server to handle form submission
+
 **Database:** MongoDB to store user data
+
 **DB UI:** Mongo Express for viewing data in browser
+
 **Orchestration:** Docker Compose to manage multi-container setup
 
 **🧱 Project Structure**
@@ -59,6 +63,4 @@ Mongo Express DB UI: http://localhost:8081
 
 - Default MongoDB credentials are admin / password
 - Make sure Docker Desktop is running on your system
-- Copy this as `README.md` into your GitHub repo.
-- Customize the GitHub repo URL under `git clone` command.
 - This project is part of my DevOps learning journey and showcases Docker image creation, Container orchestration and app deployment using Docker image.
