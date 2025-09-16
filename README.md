@@ -16,12 +16,19 @@ This is my basic DevOps learning project where I containerized a full-stack web 
 
 **🧱 Project Structure**
 project-root/
+
 │
+
 ├── Dockerfile
+
 ├── docker-compose.yml
+
 ├── profile.html
+
 ├── Server.js
+
 └── README.md  
+
 
 **🛠️ What I Did**
 
