@@ -1,6 +1,8 @@
 **🚀 Docker Project – User Info App with MongoDB**
 
-This is my basic DevOps learning project where I containerized a full-stack web application using Docker and Docker Compose.
+This is my DevOps learning project where I containerized a sample full-stack web application that stores user information using Docker and Docker Compose.
+This project showcases my skills in Web application development, Docker image creation, Containerization and app deployment using Docker image.
+All the files added can be used replicated in local environment upon testing to implement and utilize the dockerized application.
 
 **📦 Project Overview**
 
@@ -60,14 +62,14 @@ Mongo Express DB UI: http://localhost:8081
 
 **📌 Key Learning Outcomes**
 
-- Dockerized a Node.js application
-- Setting up MongoDB and Mongo Express as services
-- Networking between containers using Docker Compose
-- Volume and environment variable usage
+- Dockerized a Node.js application written for user input collection
+- Setting up MongoDB and Mongo Express as services for DB storage of user data
+- Networking between containers using Docker Compose to run multiple containers
+- Volume and environment variable usage for storage colatility
 - End-to-end application development and deployment using containers
 
 **📖 Notes**
 
 - Default MongoDB credentials are admin / password
-- Make sure Docker Desktop is running on your system
+- Make sure Docker Desktop is running on your system before starting the containers
 - This project is part of my DevOps learning journey and showcases Docker image creation, Container orchestration and app deployment using Docker image.
