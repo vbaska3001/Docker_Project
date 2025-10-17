@@ -63,13 +63,16 @@ Mongo Express DB UI: http://localhost:8081
 **📌 Key Learning Outcomes**
 
 - Dockerized a Node.js application written for user input collection
-- Setting up MongoDB and Mongo Express as services for DB storage of user data
-- Networking between containers using Docker Compose to run multiple containers
-- Volume and environment variable usage for storage colatility
-- End-to-end application development and deployment using containers
+- Setup MongoDB and Mongo Express as services for DB storage of user data
+- Used Docket Compose for Networking between containers and run multiple containers
+- Used Volume and environment variable for storage volatility
+- Containerized End-to-end application development and deployment using Docker.
 
 **📖 Notes**
 
 - Default MongoDB credentials are admin / password
 - Make sure Docker Desktop is running on your system before starting the containers
 - This project is part of my DevOps learning journey and showcases Docker image creation, Container orchestration and app deployment using Docker image.
+- Make sure to replicate the files in temp space and test it before deployment as this is just a demo setup for learning purpose only.
+
+
