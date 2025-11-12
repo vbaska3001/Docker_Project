@@ -1,4 +1,4 @@
-**🚀 Docker Project – User Info App with MongoDB**
+## 🚀 Docker Project – User Info App with MongoDB
 
 This is my DevOps learning project where I containerized a sample full-stack web application that stores user information using Docker and Docker Compose.
 
@@ -6,7 +6,7 @@ This project showcases my skills in Web application development, Docker image cr
 
 All the files added can be used replicated in local environment upon testing to implement and utilize the dockerized application.
 
-**📦 Project Overview**
+## 📦 Project Overview
 
 **Frontend:** HTML form to collect user data
 
@@ -18,7 +18,7 @@ All the files added can be used replicated in local environment upon testing to 
 
 **Orchestration:** Docker Compose to manage multi-container setup
 
-**🧱 Project Structure**
+## 🧱 Project Structure
 project-root/
 
 ├── Dockerfile
@@ -32,7 +32,7 @@ project-root/
 └── README.md  
 
 
-**🛠️ What I Did**
+## 🛠️ What I Did
 
 - Fetched a sample app html and js script
 - Built a Docker image for the Node.js app using a `Dockerfile`
@@ -60,7 +60,7 @@ docker-compose up --build
 App UI: http://localhost:3000
 Mongo Express DB UI: http://localhost:8081
 
-**📌 Key Learning Outcomes**
+## 📌 Key Learning Outcomes
 
 - Dockerized a Node.js application written for user input collection
 - Setup MongoDB and Mongo Express as services for DB storage of user data
@@ -68,11 +68,9 @@ Mongo Express DB UI: http://localhost:8081
 - Used Volume and environment variable for storage volatility
 - Containerized End-to-end application development and deployment using Docker.
 
-**📖 Notes**
+## 📖 Notes
 
 - Default MongoDB credentials are admin / password
 - Make sure Docker Desktop is running on your system before starting the containers
 - This project is part of my DevOps learning journey and showcases Docker image creation, Container orchestration and app deployment using Docker image.
 - Make sure to replicate the files in temp space and test it before deployment as this is just a demo setup for learning purpose only.
-
-
