@@ -4,7 +4,7 @@ This is my DevOps learning project where I containerized a full-stack web applic
 
 This project showcases my skills in Web application development, Docker image creation, Containerization and app deployment using Docker.
 
-All the files added can be used replicated in local environment upon testing to implement and utilize the dockerized application.
+All the files added can be used to replicate in local environment upon testing to implement and utilize the dockerized application.
 
 ## Project Overview
 
