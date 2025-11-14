@@ -2,7 +2,7 @@
 
 This is my DevOps learning project where I containerized a full-stack web application to store user information using Docker and Docker Compose with multiple containers.
 
-This project showcases my skills in Web application development, Docker image creation, Containerization and app deployment using Docker image.
+This project showcases my skills in Web application development, Docker image creation, Containerization and app deployment using Docker.
 
 All the files added can be used replicated in local environment upon testing to implement and utilize the dockerized application.
 
