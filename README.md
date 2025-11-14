@@ -1,6 +1,6 @@
 ## Docker Project – User Info App with MongoDB
 
-This is my DevOps learning project where I containerized a full-stack web application to store user information using Docker and Docker Compose for multiple container deployment.
+This is my DevOps learning project where I containerized a full-stack web application to store user information using Docker and Docker Compose with multiple containers.
 
 This project showcases my skills in Web application development, Docker image creation, Containerization and app deployment using Docker image.
 
